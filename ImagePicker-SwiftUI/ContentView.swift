@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  ImagePicker-SwiftUI
-//
-//  Created by Anas P on 29/09/21.
-//
 
 import SwiftUI
 
