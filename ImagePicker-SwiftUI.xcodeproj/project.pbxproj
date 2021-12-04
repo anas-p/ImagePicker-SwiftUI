@@ -12,6 +12,7 @@
 		58A1406227046E45002EEE11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A1406127046E45002EEE11 /* Assets.xcassets */; };
 		58A1406527046E45002EEE11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A1406427046E45002EEE11 /* Preview Assets.xcassets */; };
 		58A1406C27046FDE002EEE11 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A1406B27046FDE002EEE11 /* ImagePicker.swift */; };
+		58A37A86275B2A11002977D4 /* ActionSheet+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A37A85275B2A11002977D4 /* ActionSheet+Modifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		58A1406127046E45002EEE11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A1406427046E45002EEE11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		58A1406B27046FDE002EEE11 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		58A37A85275B2A11002977D4 /* ActionSheet+Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Modifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		58A1405C27046E44002EEE11 /* ImagePicker-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				58A37A84275B29F7002977D4 /* View Modifiers */,
 				58A1405D27046E44002EEE11 /* ImagePicker_SwiftUIApp.swift */,
 				58A1405F27046E44002EEE11 /* ContentView.swift */,
 				58A1406B27046FDE002EEE11 /* ImagePicker.swift */,
@@ -68,6 +71,14 @@
 				58A1406427046E45002EEE11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		58A37A84275B29F7002977D4 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				58A37A85275B2A11002977D4 /* ActionSheet+Modifier.swift */,
+			);
+			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			files = (
 				58A1406C27046FDE002EEE11 /* ImagePicker.swift in Sources */,
 				58A1406027046E44002EEE11 /* ContentView.swift in Sources */,
+				58A37A86275B2A11002977D4 /* ActionSheet+Modifier.swift in Sources */,
 				58A1405E27046E44002EEE11 /* ImagePicker_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

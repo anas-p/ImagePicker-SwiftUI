@@ -1,6 +1,9 @@
 
 import SwiftUI
 
+/// This view shows a Image view and a Button,
+/// Tap on both views will display an action sheet to choose image picker
+///
 struct ContentView: View {
     
     @State private var showImagePickerOptions: Bool = false
@@ -25,7 +28,7 @@ struct ContentView: View {
                 .padding(.top, 60)
             
             
-            Button("Add Photo", action: {
+            Button(Localization.addPhotoTitle, action: {
                 showImagePickerOptions = true
             })
                 .font(.system(size: 17))
@@ -34,18 +37,8 @@ struct ContentView: View {
                 .foregroundColor(Color.white)
                 .cornerRadius(10)
                 .padding(.top, 40)
-                .confirmationDialog("Choose", isPresented: $showImagePickerOptions, titleVisibility: .visible) {
-                    Button("Photo Library") {
-                        sourceType = .photoLibrary
-                        showImagePicker = true
-                    }
-                    
-                    Button("Camera") {
-                        sourceType = .camera
-                        showImagePicker = true
-                    }
-                }
-            
+                .ActionSheet(showImagePickerOptions: $showImagePickerOptions, showImagePicker: $showImagePicker, sourceType: $sourceType)
+
             Spacer()
         }
         .sheet(isPresented: $showImagePicker) {
@@ -58,4 +51,10 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+// MARK: - Localization
+
+private enum Localization {
+    static let addPhotoTitle = NSLocalizedString("Add Photo", comment: "Button title for Add Photo")
 }

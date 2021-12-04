@@ -1,6 +1,8 @@
 
 import SwiftUI
 
+/// Image Picker Representable
+/// 
 struct ImagePicker: UIViewControllerRepresentable {
     
     typealias imagePickerController = UIImagePickerController
@@ -47,7 +49,4 @@ struct ImagePicker: UIViewControllerRepresentable {
             isShown = false
         }
     }
-    
-    
-    
 }
